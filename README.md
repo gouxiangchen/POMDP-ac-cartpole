@@ -12,10 +12,10 @@ solving POMDP by LSTM in gym.cartpole environment, in pytorch
 the ideal of convert Cartpole-v0 into a POMDP task comes from [HaiyinPiao](https://github.com/HaiyinPiao/pytorch-a2clstm-DRQN)
 
 and the full observation of cartpole in gym is in 4 dimensions :
-0. cart position (-4.8, 4.8)
-1. cart velocity (-inf, inf)
-2. pole angle (-24°, 24°)
-3. pole velocity at tip (-inf, inf)
+1. cart position (-4.8, 4.8)
+2. cart velocity (-inf, inf)
+3. pole angle (-24°, 24°)
+4. pole velocity at tip (-inf, inf)
 
 and we can delete one or more dimensions of the standard states and make the task become a partial observed markov decision process(POMDP).
 
